@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@700&display=swap');
+:root {
+  --heading-font: 'Tektur', cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.result_box {
+  padding: 30px 40px;
+  background: darkmagenta;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  color: lightgreen;
+  padding: 20px 10px;
+}
+
+input {
+  padding: 7px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 0 0 10px;
+}
+
+button {
+  padding: 5px 40px;
+  outline: none;
+  border: none;
+  font-family: var(--heading-font);
+  border-radius: 3px;
+  background-color: steelblue;
+  color: wheat;
+  margin: 10px;
+}
+
+/* ERROR  */
+#error_message {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* RESLUT MESSAGE  */
+.resultMessage {
+  color: wheat;
+  font-weight: bolder;
+  font-size: 1rem;
+  background: tomato;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

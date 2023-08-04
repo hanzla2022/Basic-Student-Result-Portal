@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Marks Finder</title>
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="result_box">
+        <div class="result_Card">
+          <h2>Students Result Portal</h2>
+          <input
+            type="search"
+            placeholder="type student name"
+            id="applicantName"
+          /><br />
+          <button type="submit" onclick="findMarks()">Find</button>
+          <p id="studentName"></p>
+          <p id="studentMarks"></p>
+          <p id="studentGrades"></p>
+          <!-- ERROR MESSAGE BOX -->
+          <p id="error_message"></p>
+        </div>
+      </div>
+    </div>
+    <!-- JS LKNK -->
+    <script src="script.js"></script>
+  </body>
+</html>
