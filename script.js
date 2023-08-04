@@ -1,4 +1,3 @@
-
 //////////////////////// STUDETNS RESULT PORTAL //////////////////////
 
 // STUDENTS DATA ARRAY
@@ -28,7 +27,7 @@ let studentsData = [
     marks: 673,
   },
   {
-    studentName: 'mark',
+    studentName: 'maxwell',
     marks: 300,
   },
 ];
@@ -81,4 +80,16 @@ function findMarks() {
     errMessage.textContent = '';
   }
   // EMPTY OUT THE INPUT FIELDS AFTER THE FORM SUBMISSION
+}
+
+// GET THE STUDENTS LIST
+
+let studentsList = document.getElementById('students_list');
+for (let getStudentName of studentsData) {
+  let items = document.getElementById('itmes');
+  let para = document.createElement('p');
+  para.classList.add('studentsList');
+  para.textContent = `Student Names to Search :  ${getStudentName.studentName}`;
+
+  items.appendChild(para);
 }
